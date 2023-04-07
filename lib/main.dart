@@ -218,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 50,
                   child: ElevatedButton(
                     onPressed: () =>
-                        btnAdd("999", nameController.text, true, context),
+                        btnAdd("999", nameController.text,false, context),
                     child: const Text(
                       "Thêm",
                       style: TextStyle(color: Colors.white),
