@@ -154,6 +154,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             // ),
                             IconButton(
                               icon: Icon(Icons.delete),
+                              color: Colors.red,
                               onPressed: () {
                                 // Add your code here
                                 showDialog(
@@ -189,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
         } else if (snapshot.hasError) {
           return Text("error ${snapshot.error}");
         } else {
-          return CircularProgressIndicator();
+          return const Center(child: CircularProgressIndicator());
         }
       },
     );
